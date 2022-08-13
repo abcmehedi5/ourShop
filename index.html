@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shopingHead">
+            <h1>My Shoping Cart</h1>
+        </div>
+        <div class="Product">
+            <div class="ProductDetails">
+                <img src="images/phone.png" alt="">
+                <div class="productDocu">
+                    <h2>Samsung</h2>
+                    <p>#05995000455 <br> Ram:16GB , Storage: 128GB</p>
+                </div>
+
+                <div class="price">
+                    <h2>price</h2>
+                    <h4>$500</h4>
+                </div>
+
+                <div class="btn">
+                    <button id="dicrementBtn">-</button>
+                    <input id="inputIncrement" type="text" value="1">
+                    <button id="incrementBtn">+</button>
+                </div>
+
+                <div class="TotalPrice">
+                    <h2>Total Price</h2>
+                    <h4>$<span id="Totalprice">500</span></h4>
+                </div>
+
+            </div>
+        </div>      
+     </div>
+
+     <script>
+         
+
+         document.getElementById('incrementBtn').addEventListener('click',function(){
+             var Increment = document.getElementById('inputIncrement');
+             var incremntInt=parseInt(Increment.value);
+             var total= incremntInt+1;
+             document.getElementById('inputIncrement').value=total;
+             var totalPrice = document.getElementById('Totalprice').innerText;
+             var totalPriceInt=parseInt(totalPrice);
+             var totalAmount= total*500;
+             document.getElementById('Totalprice').innerText=totalAmount;
+
+         })
+
+         document.getElementById('dicrementBtn').addEventListener('click',function(){
+            var Increment = document.getElementById('inputIncrement');
+            var incremntInt=parseInt(Increment.value);
+            if(incremntInt > 0){
+            var total= incremntInt-1;
+            document.getElementById('inputIncrement').value = total;
+            var totalAmount= total * 500;
+            document.getElementById('Totalprice').innerText= totalAmount;
+            }
+         })
+     </script>
+</body>
+</html>

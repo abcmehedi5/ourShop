@@ -1,0 +1,75 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body h2{
+    color: #f0a038;
+}
+.container{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+   
+
+}
+.shopingHead{
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding:1px 40px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px 2px  #bbbbbb;
+    font-size: 15px;
+}
+.Product{
+    margin: 50px;
+}
+.ProductDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eaea;
+    box-shadow: 2px 5px 2px 2px #bbbbbb;
+    border-radius: 8px;
+
+
+}
+.ProductDetails h4{
+        font-size: 19px;
+}
+.ProductDetails img{
+    width: 140px;
+}
+.productDocu{
+    margin: 40px;
+}
+.price{
+    text-align: center;
+    margin: 30px;
+}
+.TotalPrice{
+    text-align: center;
+}
+.btn{
+    padding: 20px;
+    margin: 20px;
+    margin-right: 50px;
+}
+.btn button{
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f0a038;
+}
+.btn input{
+    width: 20px;
+    text-align: center;
+    padding: 10px;
+}
